@@ -25,6 +25,16 @@
     </div>
 
     <script>
+      const div = document.querySelector('div');
+      let winWidth;
+      let winHeight;
+
+      window.onresize = () => {
+        winWidth = window.innerWidth;
+        winHeight = window.innerHeight;
+        div.style.width = winWidth + 'px';
+        div.style.height = winHeight + 'px';
+      }
 
     </script>
   </body>
